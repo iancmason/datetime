@@ -16,6 +16,9 @@ t_fin = t_now + datetime.timedelta(0,t_pom+delta_sec)
 root = tkinter.TK() #starts new window
 root.withdraw() #hides main window, allowing you to only use message box
 
+# TODO: 
+# modify host to block distracting websites
+
 messagebox.showinfo('Pomodoro started!', '\nIt is now '+ t_now.strftime('%H:%M') + 
 ' hrs. \nTimer set for 25 mins.') #displays window with info
 
@@ -63,3 +66,5 @@ while True:
 		time.sleep(20)
 		t_now = dt.datetime.now()
 		timenow = t_now.strftime('%H:%M')
+
+print('\n\nYou made it to the end!\n\n')
